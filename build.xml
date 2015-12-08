@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project name="Mobikwik_UIAutomation_Framework" default="compile"
+	basedir=".">
+
+	<tstamp prefix="getTime">
+		<format property="TODAY" pattern="dd-MM-yyyy-hh-mm" />
+	</tstamp>
+
+	<property name="src" location="${basedir}/src" />
+	<property name="lib" location="${basedir}/libs" />
+	<property name="build" location="${basedir}/build" />
+	<property name="test-output" location="${basedir}/test-output" />
+	<property name="backup" location="${basedir}/backup" />
+
+
+
+	<target name="setClassPath">
+		<path id="classpath_jars">
+			<pathelement path="${basedir}/*" />
+			<fileset dir="${lib}" casesensitive="yes">
+				<include name="*.jar" />
+			</fileset>
+		</path>
+
+		<pathconvert pathsep=":" property="test.classpath" refid="classpath_jars" />
+
+	</target>
+
+	<target name="loadTestNG" depends="setClassPath">
+		<taskdef resource="testngtasks" classpath="${test.classpath}" />
+	</target>
+
+	<target name="init">
+		<mkdir dir="${build}" />
+		<mkdir dir="${backup}" />
+		<mkdir dir="${test-output}" />
+	</target>
+
+	<target name="clean">
+		<delete dir="${build}" />
+		<copy todir="${backup}/test-output_${getTime.TODAY}">
+			<fileset dir="${test-output}" />
+		</copy>
+		<delete dir="${test-output}" />
+
+	</target>
+
+	<target name="compile" depends="clean, init, setClassPath, loadTestNG">
+		<javac encoding="UTF-8" destdir="${build}" srcdir="${src}"
+			classpath="${test.classpath}" />
+	</target>
+
+	<target name="executeSanityProduction" depends="compile">
+			<testng classpath="${test.classpath}:${build}"
+			delegateCommandSystemProperties="true">
+			
+			<xmlfileset dir="${basedir}" includes="testng.xml" />
+		</testng>
+	</target>
+
+
+</project>
+

@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Automation Tests]">
+  <test name="Outfittery_TestCases(failed)">
+    <classes>
+      <class name="Outfittery.web.tests.HomePageTest">
+        <methods>
+          <include name="instantiateHelpers"/>
+          <include name="logintest"/>
+          <include name="createSession"/>
+          <include name="teardown"/>
+        </methods>
+      </class> <!-- Outfittery.web.tests.HomePageTest -->
+    </classes>
+  </test> <!-- Outfittery_TestCases(failed) -->
+</suite> <!-- Failed suite [Automation Tests] -->

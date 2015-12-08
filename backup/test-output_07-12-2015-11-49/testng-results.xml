@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="60305" started-at="2015-12-07T05:51:21Z" finished-at="2015-12-07T05:52:21Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="60305" started-at="2015-12-07T05:51:21Z" finished-at="2015-12-07T05:52:21Z">
+      <class name="Outfittery.web.tests.HomePageTest">
+        <test-method status="PASS" signature="createSession()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="createSession" is-config="true" duration-ms="9660" started-at="2015-12-07T11:21:21Z" finished-at="2015-12-07T11:21:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createSession -->
+        <test-method status="PASS" signature="instantiateHelpers()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="instantiateHelpers" is-config="true" duration-ms="105" started-at="2015-12-07T11:21:31Z" finished-at="2015-12-07T11:21:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="PASS" signature="logintest()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="logintest" duration-ms="50307" started-at="2015-12-07T11:21:31Z" finished-at="2015-12-07T11:22:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="teardown" is-config="true" duration-ms="218" started-at="2015-12-07T11:22:21Z" finished-at="2015-12-07T11:22:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Outfittery.web.tests.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

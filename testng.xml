@@ -1,0 +1,8 @@
+<suite name="Automation Tests">
+
+	<test name="Outfittery_TestCases">
+		<classes>
+			<class name="Outfittery.web.tests.HomePageTest"></class>
+		</classes>
+	</test>
+</suite>

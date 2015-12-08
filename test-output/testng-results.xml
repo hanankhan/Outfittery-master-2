@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<Font Color=#008000> PASS </Font>Verifying Profile page]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+    <line>
+      <![CDATA[<br>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="91732" started-at="2015-12-08T07:36:08Z" finished-at="2015-12-08T07:37:39Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="91732" started-at="2015-12-08T07:36:08Z" finished-at="2015-12-08T07:37:39Z">
+      <class name="Outfittery.web.tests.HomePageTest">
+        <test-method status="PASS" signature="createSession()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="createSession" is-config="true" duration-ms="22446" started-at="2015-12-08T13:06:08Z" finished-at="2015-12-08T13:06:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- createSession -->
+        <test-method status="PASS" signature="instantiateHelpers()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="instantiateHelpers" is-config="true" duration-ms="636" started-at="2015-12-08T13:06:30Z" finished-at="2015-12-08T13:06:31Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- instantiateHelpers -->
+        <test-method status="PASS" signature="logintest()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="logintest" duration-ms="68630" started-at="2015-12-08T13:06:31Z" finished-at="2015-12-08T13:07:39Z">
+          <reporter-output>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<Font Color=#008000> PASS </Font>Verifying Profile page]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+            <line>
+              <![CDATA[<br>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- logintest -->
+        <test-method status="PASS" signature="teardown()[pri:0, instance:Outfittery.web.tests.HomePageTest@96532d6]" name="teardown" is-config="true" duration-ms="0" started-at="2015-12-08T13:07:39Z" finished-at="2015-12-08T13:07:39Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- teardown -->
+      </class> <!-- Outfittery.web.tests.HomePageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
